@@ -2,6 +2,14 @@
 
 A geometric grid trading bot for [Primit](https://primit.io) perpetual DEX on Avalanche. Supports **Long**, **Short**, and **Neutral** modes with configurable leverage, grid count, and spread.
 
+## Features
+
+- **Geometric grid**: equal percentage spacing between levels, ideal for volatile crypto markets
+- **Three modes**: Long / Short / Neutral — pick your directional bias or run both-sided
+- **Auto re-ordering**: filled grid orders are automatically replaced to keep the grid working
+- **Real-time dashboard**: React UI with live status, positions, and open orders via WebSocket
+- **Configurable leverage, grid count, and spread**
+
 ## Tech Stack
 
 - **Backend**: Bun + TypeScript (HMAC auth, REST + WebSocket)
@@ -85,3 +93,7 @@ frontend/src/
     ├── StatusPanel.tsx  # Real-time status
     └── OrderList.tsx    # Active orders
 ```
+
+## Disclaimer
+
+Trading perpetual futures carries substantial risk of loss. This software is for educational purposes; use at your own risk, preferably on testnet first.
